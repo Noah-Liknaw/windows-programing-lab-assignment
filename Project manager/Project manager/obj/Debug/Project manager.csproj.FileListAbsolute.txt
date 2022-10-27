@@ -1,0 +1,18 @@
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\Project manager.exe.config
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\Project manager.exe
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\Project manager.pdb
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.csproj.AssemblyReference.cache
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project_manager.Properties.Resources.resources
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.csproj.GenerateResource.cache
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.csproj.CoreCompileInputs.cache
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.exe
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.pdb
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project_manager.signUp.resources
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project_manager.userLogin.resources
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project_manager.UserForm.resources
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\EntityFramework.dll
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\EntityFramework.xml
+C:\Users\NOAH\source\repos\Project manager\Project manager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NOAH\source\repos\Project manager\Project manager\obj\Debug\Project manager.csproj.CopyComplete

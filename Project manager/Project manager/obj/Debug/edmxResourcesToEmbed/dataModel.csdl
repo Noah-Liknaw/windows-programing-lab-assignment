@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="taskManagerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="contributor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="gender" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Name="passwd" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="occupation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="experience" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="phoneNum" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manager">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="passwd" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="phoneNumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Hobbies" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Gmail" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="project">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="dueDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="task">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="projectName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="dueDate" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="taskManagerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="contributors" EntityType="Self.contributor" />
+    <EntitySet Name="managers" EntityType="Self.manager" />
+    <EntitySet Name="projects" EntityType="Self.project" />
+    <EntitySet Name="tasks" EntityType="Self.task" />
+  </EntityContainer>
+</Schema>

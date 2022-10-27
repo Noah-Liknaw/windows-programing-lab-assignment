@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="taskManagerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="contributor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="20" />
+    <Property Name="gender" Type="nchar" MaxLength="1" />
+    <Property Name="passwd" Type="nchar" MaxLength="10" />
+    <Property Name="occupation" Type="nchar" MaxLength="20" />
+    <Property Name="experience" Type="nchar" MaxLength="20" />
+    <Property Name="phoneNum" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="managers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="20" />
+    <Property Name="passwd" Type="nchar" MaxLength="20" />
+    <Property Name="phoneNumber" Type="nchar" MaxLength="20" />
+    <Property Name="Gender" Type="nchar" MaxLength="20" />
+    <Property Name="Hobbies" Type="nchar" MaxLength="20" />
+    <Property Name="Gmail" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="projects">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="10" />
+    <Property Name="dueDate" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="20" />
+    <Property Name="projectName" Type="nchar" MaxLength="20" />
+    <Property Name="dueDate" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="taskManagerModelStoreContainer">
+    <EntitySet Name="contributor" EntityType="Self.contributor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="managers" EntityType="Self.managers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="projects" EntityType="Self.projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tasks" EntityType="Self.tasks" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
